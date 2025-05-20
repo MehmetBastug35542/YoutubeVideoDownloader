@@ -108,16 +108,12 @@ python main.py
 
 ## Code Structure
 
-- **main.py**: Entry point of the application, defines the `YouTubeDownloader` class
-- **YouTubeDownloader** class methods:
-  - `setup_styling()`: Configure Tkinter theme and widget styles
-  - `create_widgets()`: Create and arrange all GUI components
-  - `toggle_filename_entry()`: Enable or disable the custom filename input
-  - `browse_location()`: Open folder selection dialog
-  - `get_format_options()`: Generate `yt-dlp` option dictionary based on UI selections
-  - `start_download()`: Validate inputs and initiate the download thread
-  - `download_video()`: Perform the actual download using `yt-dlp`
-  - `download_complete()`, `download_failed()`: Handle post-download UI updates
+- **main.py**: Entry point for the application, initializes the GUI and handles events.
+- **downloader.py**: Contains the `Downloader` class that manages the download process.
+- **gui.py**: Defines the GUI layout and event handling.
+- **utils.py**: Utility functions for file path validation and notifications.
+- **requirements.txt**: Lists the required Python packages.
+- **README.md**: Documentation for the project.
 
 
 ## Error Handling
